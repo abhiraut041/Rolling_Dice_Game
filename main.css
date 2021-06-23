@@ -1,0 +1,152 @@
+/* CSS Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  /* setting default font-size to 10px */
+  font-size: 62.5%;
+}
+
+body {
+  background: linear-gradient(to right, #fc4a1a, #f7b733);
+  font-family: "Nunito", sans-serif;
+}
+
+.hidden {
+  display: None;
+}
+
+.active-player {
+  background: rgba(255, 255, 255, 0.45);
+}
+
+.player-winner {
+  background: #2f2f2f;
+}
+
+.main-section {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.players-container {
+  width: 100rem;
+  height: 60rem;
+  border-radius: 10px;
+  display: flex;
+  position: relative;
+  overflow: hidden;
+  background-color: rgba(255, 255, 255, 0.35);
+  box-shadow: 0 3rem 5rem rgba(0 0 0 / 25%);
+  backdrop-filter: blur(200px);
+  filter: blur();
+}
+
+.player-section {
+  width: 50%;
+  padding: 9rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  transition: all 0.75s;
+}
+
+.player-title {
+  font-size: 4rem;
+  font-weight: 300;
+  letter-spacing: 1px;
+  word-spacing: 2px;
+  margin-bottom: 1rem;
+  text-transform: uppercase;
+}
+
+.player-score {
+  font-size: 8rem;
+  font-weight: 400;
+  color: orangered;
+  margin-bottom: auto;
+}
+
+.current {
+  background: orangered;
+  color: white;
+  width: 65%;
+  border-radius: 10px;
+  padding: 2rem;
+  text-align: center;
+  opacity: 0.8;
+  transition: all 0.75s;
+}
+
+.current-label {
+  text-transform: uppercase;
+  font-size: 1.7rem;
+  margin-bottom: 1rem;
+}
+
+.current-score {
+  font-size: 3.5rem;
+}
+
+.btn {
+  position: absolute;
+  background: rgba(255, 255, 255, 0.6);
+  color: #444;
+  font-size: 1.8rem;
+  font-weight: 400;
+  font-family: "Nunito", Arial;
+  text-transform: uppercase;
+  text-align: center;
+  margin: auto;
+  cursor: pointer;
+  padding: 1rem 2.5rem;
+  border-radius: 50rem;
+  border: None;
+  outline: none;
+  left: 50%;
+  transform: translateX(-50%);
+  box-shadow: 0 1.75rem 3.5rem rgba(0 0 0 / 10%);
+  backdrop-filter: blur(10px);
+  transition: all 0.2s;
+}
+
+.btn:active {
+  transform: translate(-50%, 3px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+}
+
+.btn-new-game {
+  top: 4rem;
+}
+
+.btn-roll-dice {
+  top: 39.3rem;
+}
+
+.btn-hold-score {
+  top: 46.1rem;
+}
+
+/* Dice Image */
+.dice {
+  position: absolute;
+  height: 10rem;
+  top: 16.5rem;
+  left: 50%;
+  transform: translateX(-50%);
+  transform-origin: -50%;
+  box-shadow: 0 2rem 5rem rgba(0 0 0 / 20%);
+  border-radius: 20px;
+  transition: all 0.2s;
+}
+
+.dice-shake {
+  transform: translate(-50%, 5px);
+  box-shadow: 0 1rem 2rem rgba(0, 0, 0, 0.15);
+  transition: all 0.2s;
+}

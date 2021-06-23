@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="/main.css" />
+    <title>Roll the Dice</title>
+  </head>
+  <body>
+    <section class="main-section">
+      <div class="players-container">
+        <div class="player-section player1">
+          <h2 class="player-title" id="player1-name">PLAYER-1</h2>
+          <p class="player-score" id="player1-score">100</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="player1-current-score">10</p>
+          </div>
+        </div>
+        <div class="player-section player2">
+          <h2 class="player-title" id="player2-name">PLAYER-2</h2>
+          <p class="player-score" id="player2-score">27</p>
+          <div class="current">
+            <p class="current-label">Current</p>
+            <p class="current-score" id="player2-current-score">0</p>
+          </div>
+        </div>
+
+        <img id="dice-img" class="dice hidden" src="/img/dice-6.png" alt="" />
+        <button class="btn btn-new-game">🔄 New game</button>
+        <button class="btn btn-roll-dice">🎲 Roll dice</button>
+        <button class="btn btn-hold-score">📥 Hold</button>
+      </div>
+    </section>
+
+    <script src="/script.js"></script>
+  </body>
+</html>
