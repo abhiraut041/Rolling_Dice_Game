@@ -79,7 +79,7 @@ btn_roll_dice.addEventListener("click", function () {
     // 2.Display the Dice
     if (dice_element.classList.contains("hidden"))
       dice_element.classList.remove("hidden");
-    dice_element.src = `/img/dice-${dice}.png`;
+    dice_element.src = `img/dice-${dice}.png`;
     dice_element.classList.toggle("dice-shake");
 
     // 3.Check if it is 1; if true pass control to another player
